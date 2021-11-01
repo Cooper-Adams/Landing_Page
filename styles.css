@@ -1,0 +1,224 @@
+/*Fixes the margin across the page, and sets the flex to column in order to stick the footer*/
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF8;
+    text-align: center;
+    font-family: 'Roboto', arial;
+}
+
+/*The overall header container*/
+.header {
+    background-color: #1F2937;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*Changes the color and removes the underline from the links in the header*/
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Modifies the large soup title in the header*/
+.header h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+/*"Logo" in the top left of the header*/
+.header #Logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+    margin-left: 24px;
+}
+
+/*The links in the top right of the header*/
+.headerlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*The text of the links in the top right of the header*/
+.headerlinks a {
+    font-size: 18px;
+    color: #ebebeb;
+    margin-right: 24px;
+}
+
+/*Top level of the header, contains the title of the website and a few nav links*/
+.hc1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 225px 0px 201px;
+}
+
+/*Lower level of the header, contains two content boxes that are centered.*/
+.hc2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+    text-align: left;
+}
+
+/*Text within the lower level header*/
+.hc2 p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/*Left content box in the header, contains a title, subtext, and a button*/
+.leftbox {
+    margin-left: 225px;
+}
+
+/*Right content box in the header, contains a png of soup*/
+.rightbox {
+    margin-right: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sign up button in the leftbox within the header*/
+.leftbox button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 900;
+    border-radius: 5px;
+    padding: 5px 25px 5px 25px;
+    cursor: pointer;
+}
+
+/*Adds a shodow to the sign up button when the mouse hovers over*/
+.leftbox button:hover {
+    background-color: #3882F6;
+    box-shadow: 4px 4px black;
+}
+
+/*Section two. Holds a header, four pictures of soup, and their respective captions*/
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 45px;
+    margin-top: 15px;
+}
+
+/*Container for the soup boxes*/
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*The boxes that contain the pictures and their captions*/
+.image {
+    width: 200px;
+    height: 200px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 18px;
+    color: #1F2937;
+}
+
+/*The actual images themselves*/
+.image img{
+    border: 4px solid black;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+/*Header for the boxes (pictures of soup)*/
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+/*Section of the page that has the quote from Gordon Ramsay (100% real not fake)*/
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    font-style: italic;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 25px 200px 25px 200px;
+}
+
+/*The actual name for quote, aligned to the end to be at the far side of the quote*/
+h6 {
+    text-align: end;
+    font-style: normal;
+}
+
+/*The call to action section*/
+.call2a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    margin: 25px 250px 25px 250px;
+    border-radius: 15px;
+}
+
+/*Aligns the text in the left side of the call to action sect to the left*/
+.left-box {
+    text-align: left;
+}
+
+/*Changes non header text size on left side of call to action*/
+.left-box p {
+    font-size: 18px;
+}
+
+/*Changes header text on left side of call to action*/
+.left-box h4 {
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/*Modifies button on the right side of the call to action section*/
+.right-box button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-weight: 900;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px 25px 5px 25px;
+    cursor: pointer;
+}
+
+/*Adds a shodow to the sign up button when the mouse hovers over*/
+.right-box button:hover {
+    background-color: #3882F6;
+    box-shadow: 4px 4px black;
+}
+
+/*The footer, always stuck to the bottom of the page*/
+.footer {
+    height: 72px;
+    background: #1F2937;
+    color: #E5E7EB;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
